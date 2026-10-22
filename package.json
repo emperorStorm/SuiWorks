@@ -1,0 +1,33 @@
+{
+  "name": "suiworks",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "vue-tsc --noEmit",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "build": "npm run typecheck && npm run content:validate && vite-ssg build && tsx scripts/check-build.ts",
+    "preview": "tsx scripts/preview.ts",
+    "test:e2e": "playwright test",
+    "package:deploy": "npm run build && node scripts/package-deploy.mjs"
+  },
+  "dependencies": {
+    "@unhead/vue": "^2.0.0",
+    "vite-ssg": "^28.0.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0",
+    "vue-tsc": "^3.1.0"
+  }
+}

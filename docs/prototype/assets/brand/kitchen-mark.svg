@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="kitchen-mark-title">
+  <title id="kitchen-mark-title">岁岁食光小厨房占位标志</title>
+  <rect width="64" height="64" rx="12" fill="#FBF7EE"/>
+  <rect x="1" y="1" width="62" height="62" rx="11" fill="none" stroke="#2E5A4C" stroke-opacity=".2" stroke-width="1"/>
+  <path d="M18 31h28c0 9-5.5 15-14 15s-14-6-14-15Z" fill="#478f61"/>
+  <path d="M24 24c-2.6-3.2 2.6-4.8 0-8M32 23c-2.6-3.2 2.6-4.8 0-8M40 24c-2.6-3.2 2.6-4.8 0-8" fill="none" stroke="#478f61" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+  <text x="32" y="43" text-anchor="middle" font-family="Songti SC, STSong, Noto Serif SC, serif" font-size="12" font-weight="600" fill="#FFFDF8">食</text>
+</svg>

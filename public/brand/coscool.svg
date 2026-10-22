@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">课思库图标</title>
+  <desc id="desc">青绿色圆角底座上的 C 形题库书本标识</desc>
+  <defs>
+    <linearGradient id="baseGradient" x1="160" y1="112" x2="848" y2="928" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12a497" />
+      <stop offset="1" stop-color="#0a766e" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="320" y1="230" x2="740" y2="812" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#edf8f6" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#053b38" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="216" fill="url(#baseGradient)" />
+  <path d="M770 194c42 0 76 34 76 76v72H483c-123 0-222 78-222 170s99 170 222 170h363v72c0 42-34 76-76 76H484c-201 0-364-142-364-318s163-318 364-318h286Z" fill="#08665f" opacity="0.32" />
+  <path d="M738 168c42 0 76 34 76 76v84H478c-121 0-220 82-220 184s99 184 220 184h336v84c0 42-34 76-76 76H480c-211 0-382-154-382-344s171-344 382-344h258Z" fill="url(#cardGradient)" filter="url(#softShadow)" />
+  <path d="M478 390h236c21 0 38 17 38 38s-17 38-38 38H478c-45 0-82 21-82 46s37 46 82 46h236c21 0 38 17 38 38s-17 38-38 38H478c-91 0-166-55-166-122s75-122 166-122Z" fill="#0f8f83" />
+  <path d="M552 244h186c22 0 40 18 40 40v38H552c-112 0-204 85-204 190s92 190 204 190h226v38c0 22-18 40-40 40H552c-157 0-284-120-284-268s127-268 284-268Z" fill="#ffffff" opacity="0.28" />
+  <path d="M500 438h170" stroke="#e5f3f1" stroke-width="34" stroke-linecap="round" />
+  <path d="M500 512h216" stroke="#e5f3f1" stroke-width="34" stroke-linecap="round" />
+  <path d="M500 586h142" stroke="#e5f3f1" stroke-width="34" stroke-linecap="round" />
+</svg>

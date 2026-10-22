@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>岁序工坊 SuiWorks · 个人软件作品集</title>
+  <meta name="description" content="岁序工坊 SuiWorks 是个人软件工坊，收录课思库、智链中枢、岁岁时光、岁音、岁岁食光小厨房与岁影，提供功能介绍、软件下载与网站入口。">
+  <meta name="theme-color" content="#F5EFE3">
+  <link rel="icon" href="assets/brand/suiworks-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <noscript>
+    <div class="noscript">
+      当前原型需要 JavaScript 渲染作品列表。你仍可以访问
+      <a href="https://github.com/emperorStorm" target="_blank" rel="noopener noreferrer">GitHub</a>
+      查看源码。
+    </div>
+  </noscript>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="岁序工坊 SuiWorks 首页">
+        <img src="assets/brand/suiworks-mark.svg" alt="" width="36" height="36">
+        <span class="brand-text">
+          <strong>岁序工坊</strong>
+          <span>SUIWORKS</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">打开菜单</span>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="#works"><span>01</span>作品</a>
+        <a href="#downloads"><span>02</span>下载</a>
+        <a href="#about"><span>03</span>关于</a>
+        <a class="nav-github" href="https://github.com/emperorStorm" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">SUIWORKS · 个人软件作品集</p>
+          <h1 id="hero-title">岁有其<span class="hero-accent">序</span>，<br>作有其<span class="hero-accent">物</span>。</h1>
+          <p class="hero-lead">以岁时为序，把真实的小问题做成安静、可靠、可长期使用的软件。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#works">浏览作品</a>
+            <a class="btn btn-ghost" href="https://github.com/emperorStorm" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>作品</dt>
+              <dd><span data-stat="works">6</span></dd>
+            </div>
+            <div>
+              <dt>覆盖平台</dt>
+              <dd><span data-stat="platforms">7</span></dd>
+            </div>
+            <div>
+              <dt>本地优先</dt>
+              <dd><span data-stat="local-first">4</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero-aside" aria-label="工坊题记">
+          <div class="hero-aside-rule" aria-hidden="true"></div>
+          <p class="hero-vertical">
+            <span>以岁时为序</span>
+            <span>作长久之物</span>
+          </p>
+          <img class="hero-seal" src="assets/brand/suiworks-mark.svg" alt="岁序工坊印记" width="88" height="88">
+          <p class="hero-aside-note">EST. 2026 · LOCAL FIRST</p>
+        </aside>
+      </div>
+
+      <div class="container hero-foot">
+        <span>Software made over time.</span>
+        <span>向下浏览 ↓</span>
+      </div>
+    </section>
+
+    <section class="section works" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no" aria-hidden="true">01</span>
+          <div class="section-title-group">
+            <p class="section-kicker">SELECTED WORKS</p>
+            <h2 id="works-title">作品</h2>
+          </div>
+          <p class="section-desc">六件作品，覆盖桌面、移动与 Web 服务。每一件都从一个真实的小问题开始。</p>
+        </header>
+
+        <div class="works-toolbar reveal">
+          <div class="filters" role="group" aria-label="按形态筛选作品">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">全部 <span data-count="all">6</span></button>
+            <button class="filter" type="button" data-filter="desktop" aria-pressed="false">桌面端 <span data-count="desktop">3</span></button>
+            <button class="filter" type="button" data-filter="mobile" aria-pressed="false">移动端 <span data-count="mobile">2</span></button>
+            <button class="filter" type="button" data-filter="service" aria-pressed="false">Web 服务 <span data-count="service">1</span></button>
+          </div>
+          <p class="filter-status" id="filter-status" aria-live="polite">显示 6 件作品</p>
+        </div>
+
+        <div class="works-grid" id="works-grid"></div>
+      </div>
+    </section>
+
+    <section class="section downloads" id="downloads" aria-labelledby="downloads-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no" aria-hidden="true">02</span>
+          <div class="section-title-group">
+            <p class="section-kicker">DOWNLOADS</p>
+            <h2 id="downloads-title">下载与入口</h2>
+          </div>
+          <p class="section-desc">一处查看全部作品的版本、形态与获取方式。</p>
+        </header>
+
+        <div class="ledger-wrap reveal">
+          <table class="ledger">
+            <thead>
+              <tr>
+                <th scope="col">作品</th>
+                <th scope="col">形态</th>
+                <th scope="col">版本</th>
+                <th scope="col">获取</th>
+              </tr>
+            </thead>
+            <tbody id="ledger-body"></tbody>
+          </table>
+        </div>
+
+        <p class="section-note reveal">原型阶段下载统一指向 GitHub Releases；正式安装包与官网地址待上线前接入。</p>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-lead reveal">
+          <p class="section-kicker">03 / ABOUT</p>
+          <h2 id="about-title">一个人的<br>软件工坊</h2>
+          <p class="about-quote">“先把东西做出来，再把它做久一点。”</p>
+        </div>
+
+        <div class="about-copy reveal">
+          <p>岁序工坊是一个人的软件工坊。这里收录我自己在用的桌面工具、移动应用与 Web 服务，它们大多从一个具体的小问题开始，然后被慢慢打磨成可以长期使用的东西。</p>
+          <p>我偏爱本地优先：数据先留在自己的设备上，网络与云服务是补充，而不是前提。</p>
+
+          <ul class="principles">
+            <li>
+              <span>01</span>
+              <div>
+                <strong>本地优先</strong>
+                <p>能离线完成的事，就不依赖服务器；数据默认放在自己的设备里。</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <strong>一物一用</strong>
+                <p>每个工具解决一类问题，不把所有能力塞进同一个入口。</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <strong>长期维护</strong>
+                <p>先把东西做出来，再持续修正，让它经得起日常使用。</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="tech-note">
+            <p class="eyebrow">TECH / 正式版规划</p>
+            <p class="tech-stack">Vue 3 · TypeScript · Vite SSG · Nginx</p>
+            <p class="muted">当前页面是静态 HTML 原型；正式项目已采用构建期预渲染的纯静态架构，生产服务器只运行 Nginx。</p>
+          </div>
+
+          <a class="btn btn-ghost" href="https://github.com/emperorStorm" target="_blank" rel="noopener noreferrer">在 GitHub 查看 ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/brand/suiworks-mark.svg" alt="" width="36" height="36">
+        <span>
+          <strong>岁序工坊</strong>
+          <span>SUIWORKS</span>
+        </span>
+      </div>
+      <p class="footer-tagline">岁有其序，作有其物。</p>
+      <nav class="footer-links" aria-label="页脚导航">
+        <a href="#works">作品</a>
+        <a href="#downloads">下载</a>
+        <a href="#about">关于</a>
+        <a href="https://github.com/emperorStorm" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="#top">回到顶部 ↑</a>
+      </nav>
+      <p class="footer-meta">
+        <span>© <span id="year">2026</span> 岁序工坊 SuiWorks</span>
+        <span>Prototype 0.1 · Built with care</span>
+      </p>
+    </div>
+  </footer>
+
+  <dialog class="drawer" id="product-dialog" aria-labelledby="drawer-title">
+    <div class="drawer-panel">
+      <header class="drawer-head">
+        <button class="drawer-close" id="drawer-close" type="button" aria-label="关闭详情">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="drawer-id">
+          <img class="drawer-logo" id="drawer-logo" src="assets/brand/suiworks-mark.svg" alt="" width="60" height="60">
+          <div class="drawer-id-text">
+            <p class="drawer-kicker" id="drawer-kicker"></p>
+            <h2 class="drawer-title" id="drawer-title" tabindex="-1"></h2>
+            <p class="drawer-sub" id="drawer-sub"></p>
+          </div>
+        </div>
+      </header>
+      <div class="drawer-body" id="drawer-body"></div>
+      <footer class="drawer-actions" id="drawer-actions"></footer>
+    </div>
+  </dialog>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
